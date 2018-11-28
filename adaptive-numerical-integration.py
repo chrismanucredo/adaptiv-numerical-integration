@@ -2,12 +2,13 @@
 """
 author: christoph manucredo, chris.manucredo@gmail.com
 about:
-    this programm implements the numerical adaptiv integration of real
+    this programm implements the numerical adaptive integration of real
     functions using the Richardson extrapolation as an error estimator.
 """
 
 import numpy as np
 
+#test functions
 f = lambda x: (x**20) * np.cos(x)
 h = lambda x: np.sqrt(x+1) * np.cos(x**2)
 g = lambda x: (-x**4+x**3-x**2+x)*np.sqrt(x)*np.cos(x)
